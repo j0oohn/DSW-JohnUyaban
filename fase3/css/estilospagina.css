@@ -1,0 +1,68 @@
+header{
+    background-color: rgb(84, 186, 185);
+}
+section{
+    grid-column: 1/5;
+    background-color: rgb(233, 218, 193);
+}
+aside{
+    grid-column: 5/6;
+    background-color: rgb(247, 236, 222);
+}
+#cen{
+    text-align: center;
+}
+footer{
+    background-color: darkgrey;
+}
+nav{
+    background-color: rgb(24, 151, 143);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+body{
+    display: grid;
+}
+.estilomenu{
+    list-style-type: none;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.estilomenu>li{
+    float: left;
+}
+.estilomenu li a{
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+.estilomenu li a:hover{
+    background-color: cyan;
+}
+.estilomenu li ul{
+    list-style-type: none;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+.estilomenu li:hover > ul{
+    display: block;
+}
+.estilomenu li ul li{
+    position: relative;
+}
+.estilomenu li ul li ul{
+    right: 140px;
+}
